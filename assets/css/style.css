@@ -80,11 +80,10 @@ section {
 
 .hero {
     background-image: url("../images/hero-bg.jpg");
+    height: 600px;
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    position: relative;
     margin: 20px;
     background-color: white;
     font-size: 20px;
@@ -148,6 +147,11 @@ section {
     margin: 0 5px;
 }
 
+.intro {
+    text-align: center;
+}
+
+
 .intro p {
     line-height: 1,7;
     color: #39a6b2;
@@ -156,8 +160,8 @@ section {
     margin: 0 auto;
 }
 
-.step {
-    
+.steps {
+    text-align: center;
     background: #fce138;
 }
 
@@ -165,11 +169,10 @@ section {
 .section-title {
     font-size: 55px;
     color: #024e76;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
     border-bottom: 3px solid;
-    width: 50%;
 }
 
 .primary-border {
@@ -180,18 +183,7 @@ section {
     border-color: #39a6B2;
 }
 
-.step {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
-    border-bottom: 1px solid #39a6b2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.step div {
+.steps div {
     margin-bottom: 80px;
 
 }
@@ -199,43 +191,17 @@ section {
 .steps img {
     width: 15%;
     margin: 10px 0;
+
 }
 
-.step-img {
-    flex: 1 30%;
-    margin-right: 20px;
-}
-
-.step-img img {
-    max-width: 100%;
-}
-
-.step-text {
-    flex: 12;
-}
-
-.step h3 {
+.steps h3 {
     color: #024e76;
     font-size: 46px;
     margin-top: 10px;
-    flex: 1 30%;
 
 }
 
-.step-info {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.step h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: #024e76;
-}
-
-.step p {
+.steps p {
     color: #39a6B2;
     font-size: 23px;
 }
@@ -245,28 +211,43 @@ section {
 }
 
 .trainers {
-    
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .trainer {
-    width: 900px;
-    margin: 0 auto 30px auto;
+    margin: 20px;
     background: #024e76;
     color: #fce138;
-    overflow: auto;
+    flex: 1;
 }
 
-
 .trainer img {
-    width: 35%;
-    float: left;
+    width: 100%;
 }
 
 .trainer-bio {
-    padding: 10px;
-    float: right;
-    width: 60%;
-}.
+    padding: 25px;
+    line-height: 1.3;
+}
+
+.trainer-bio h3 {
+    font-size: 28px;
+}
+
+.trainer-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.trainer-bio p {
+    font-size: 17px;
+    
+}
 
 .text-left {
     text-align: left;
@@ -274,10 +255,6 @@ section {
 
 .text-right {
     text-align: right;
-}
-
-.flex-row {
-    display: flex;
 }
 
 .trainer2 {
@@ -310,7 +287,7 @@ section {
 }
 
 .contact {
-    
+    text-align: center;
     background: #024e76;
 }
 
